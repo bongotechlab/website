@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us · BongoTechLab</title>
+  <meta name="description" content="Book a free Bongo ERP demo or talk to BongoTechLab about custom software for your business.">
+  <meta name="theme-color" content="#1a6cf0">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+        <span class="kicker">Contact</span>
+        <h1>Let's talk about <span class="hl">your business</span></h1>
+        <p>Book a free demo, ask for a quote, or just tell us what's slowing you down. We usually reply within one working day.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <div class="ci"><span class="ic"><i data-icon="phone"></i></span><div><small>Call us</small><b><a data-site="phone" href="#">phone</a></b></div></div>
+          <div class="ci"><span class="ic"><i data-icon="mail"></i></span><div><small>Email</small><b><a data-site="email" href="#">email</a></b></div></div>
+          <div class="ci"><span class="ic"><i data-icon="pin"></i></span><div><small>Office</small><b data-site="address">address</b></div></div>
+          <div class="ci"><span class="ic"><i data-icon="clock"></i></span><div><small>Working hours</small><b data-site="hours">hours</b></div></div>
+          <!-- TODO: replace with a Google Maps embed <iframe> of your office -->
+          <div class="photo-ph map-ph">Office map<br>(paste a Google Maps embed here)</div>
+        </div>
+
+        <form class="form reveal d1" data-contact-form novalidate>
+          <h3>Request a demo or quote</h3>
+          <p style="color:var(--muted)">Tell us a little about your company and what you need.</p>
+          <div class="form-row">
+            <div class="field"><label for="f-name">Your name *</label><input id="f-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field">
+            <label for="f-interest">I'm interested in</label>
+            <select id="f-interest" name="interest">
+              <option>Bongo ERP</option>
+              <option>Custom software</option>
+              <option>Mobile app</option>
+              <option>Integration</option>
+              <option>Hosting &amp; support</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label id="mods-label">Modules (optional)</label>
+            <div class="chip-select" role="group" aria-labelledby="mods-label">
+              <label><input type="checkbox" name="modules" value="Inventory"><span>Inventory</span></label>
+              <label><input type="checkbox" name="modules" value="Products & BOM"><span>Products &amp; BOM</span></label>
+              <label><input type="checkbox" name="modules" value="Sales & Delivery"><span>Sales &amp; Delivery</span></label>
+              <label><input type="checkbox" name="modules" value="Production"><span>Production</span></label>
+              <label><input type="checkbox" name="modules" value="Purchase & Vendors"><span>Purchase &amp; Vendors</span></label>
+              <label><input type="checkbox" name="modules" value="HR & Payroll"><span>HR &amp; Payroll</span></label>
+              <label><input type="checkbox" name="modules" value="Machines & Assets"><span>Machines &amp; Assets</span></label>
+              <label><input type="checkbox" name="modules" value="Finance"><span>Finance</span></label>
+              <label><input type="checkbox" name="modules" value="Reports & Analytics"><span>Reports &amp; Analytics</span></label>
+            </div>
+          </div>
+          <div class="field"><label for="f-msg">Tell us about your business</label><textarea id="f-msg" name="message" placeholder="Industry, number of staff and locations, what you use today, what you want to fix..."></textarea></div>
+          <button class="btn btn--primary" type="submit">Send request <i data-icon="arrow"></i></button>
+          <p class="form-note">This opens your email app with the details filled in.</p>
+          <div class="form-ok" role="status">Thanks! Your email app should open now. If it didn't, write to us at <a data-site="email" href="#">email</a>.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
